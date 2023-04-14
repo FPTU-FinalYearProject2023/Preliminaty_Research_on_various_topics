@@ -28,10 +28,6 @@ There are several vision-based methods, often each method is specifically design
 *5* popular methods:
 
         - RepNet: Class Agnostic rep counting in the Wild
-        - Rule-based exercise rep counting using Pose Estimation
-        - Exercise rep counting using ideas from Signal Processing
-        - GymCam
-        - Rep counting using a DL-based Optical Flow Approach
 
 2. Technical Review and Existing Methods
 
@@ -84,7 +80,7 @@ C. Existing solutions
 
 > RepNet 
 
-[6]
+[6] [9]
 
 Summary:
 - Estimate the period of time an action is repeated
@@ -100,34 +96,35 @@ Input & Output:
 
 Dataset:
 
-- 
+- Countix
+
 Architechture highlight:
 
+- Temporal Similarity Matrix (TSM)
 
-Temporal Similarity Matrix (TSM)
+> DL approach 
+
+[9] [10] [11]
+
+- Combine 3 main tasks: Human pose estimation, action recognition and repetition counting
+- 
+
+Dataset: 
+ - Rep-Penn dataset based on the PennAction dataset. It covers seven exercises with nine different cycles and three action speeds.
+
+> 
+
+3. Dataset [link]
+
+Countix https://sites.google.com/view/repnet
+Rep-Penn http://dreamdragon.github.io/PennAction/
+MSCOCO https://cocodataset.org/#home
+UFC101 https://www.crcv.ucf.edu/data/UCF101.php
 
 
+4. Hardware requirement: 
 
-
-
-
-> Rule-based
-
-> Signal Processing
-
-> GymCam
-
-> DL-based Optical Approach
-
-
-
-
-
-
-
-3. Dataset
-
-4. Hardware requirement
+??? 
 
 5. Reference
 
@@ -143,3 +140,15 @@ Temporal Similarity Matrix (TSM)
 
 [6] Class Agnostic Video Rep Counting In The Wild, 2020. https://arxiv.org/pdf/2006.15418.pdf
 
+[7] Youtube guide: action recognition in the wild. https://www.youtube.com/watch?v=VKhKoY7QoRs
+
+[8] Action Recognition in the wild. Medium post. https://medium.com/@zlodeibaal/action-recognition-in-the-wild-9eb7f12b4d12
+
+
+[9] https://sites.google.com/view/repnet
+
+[10] Deep Learning-Enabled Multitask System for Exercise Recognition and Counting, 2021  https://www.mdpi.com/2414-4088/5/9/55
+
+[11] Recognition and Repetition Counting for Complex Physical Exercises with Deep Learning, 2019 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6387025/
+
+[12] Exercise and Rep counting in real time, 2020. https://arxiv.org/pdf/2005.03194.pdf
